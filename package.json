@@ -4,12 +4,11 @@
   "description": "authentication template",
   "main": "server.js",
   "scripts": {
-     "client-install": "npm install --prefix client", 
-     "start": "node server.js",
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
-  
   },
   "author": "Ernestine Kuti",
   "license": "MIT",
@@ -24,6 +23,7 @@
     "mongose": "0.0.2-security",
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0",
+    "react-router-dom": "^4.3.1",
     "validator": "^10.11.0"
   },
   "devDependencies": {
