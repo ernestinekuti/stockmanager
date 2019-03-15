@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
-// import { Link } from 'react-router-dom';
+ import { Link } from 'react-router-dom';
 
  class Navbar extends Component {
   render() {
     return (
-        <nav className="navbar navbar-expand-sm navbar-dark bg-dark mb-4">
+        <nav className="navbar navbar-expand-sm navbar-light bg-light mb-4">
         <div className="container">
-            <a className="navbar-brand" to="./dashboard.html">Stock Manager</a>
+            <Link className="navbar-brand" to="./">Stock Manager</Link>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobile-nav">
                 <span className="navbar-toggler-icon"></span>
             </button>
@@ -14,20 +14,20 @@ import React, { Component } from 'react'
             <div className="collapse navbar-collapse" id="mobile-nav">
                 <ul className="navbar-nav mr-auto">
                     <li className="nav-item">
-                        <a className="nav-link" to="/profiles"> Marketers
-        </a>
+                        <Link className="nav-link" to="/profiles"> Marketers
+        </Link>
                     </li>
                 </ul>
                 <ul className="navbar-nav ml-auto">
                         <li className="nav-item">
-                            <a className="nav-link" to="/register">
+                            <Link className="nav-link" to="/register">
                                 Sign Up
-                        </a>
+                        </Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" to="/login">
+                            <Link className="nav-link" to="/login">
                                 Login
-                        </a>
+                        </Link>
                         </li>
                     </ul>
             </div>
