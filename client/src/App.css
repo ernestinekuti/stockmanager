@@ -1,13 +1,18 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #214258; }
+  background: #214258;
+  color: #fff;
+}
 
 img {
-  width: 100%; }
+  width: 100%;
+}
 
 .landing {
   position: relative;
@@ -16,10 +21,12 @@ img {
   background-position: center;
   height: 100vh;
   margin-top: -24px;
-  margin-bottom: -50px; }
+  margin-bottom: -50px;
+}
 
 .landing-inner {
-  padding-top: 220px; }
+  padding-top: 220px;
+}
 
 .dark-overlay {
   background-color: rgba(25, 50, 70, 0.8);
@@ -27,45 +34,75 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+}
 
 .card-form {
-  opacity: 0.9; }
+  opacity: 0.9;
+}
 
 .latest-profiles-img {
   width: 40px;
-  height: 40px; }
+  height: 40px;
+}
 
 .form-control::placeholder {
-  color: #bbb !important; }
+  color: #bbb !important;
+}
 
 .navbar {
   color: #fff;
   padding: none;
-  margin-bottom: none; }
+  margin-bottom: none;
+}
 
 .nav-item {
   margin-left: 20px;
-  color: whitesmoke; }
+  color: #3d405c;
+}
 
 .sidebar {
   background-color: #3d405c;
   position: absolute;
   height: 100%;
-  background-color: #3b3c3d;
+  color: #3d405c;
   margin: none;
-  top: 60px; }
+  top: 60px;
+}
 
 .nav {
   padding: 0%;
-  margin-bottom: 0%; }
-
-.addPro {
-  top: 60px;
-  left: 100px; }
+  margin-bottom: 0%;
+}
 
 .cardis {
-  background-color: white; }
+  background-color: white;
+}
 
 .btn-sub {
-  background: #3576bd; }
+  background: #3576bd;
+  border: 0px solid transparent;
+}
+
+.list-pro {
+  margin-top: 24px;
+  top: 60px;
+  background-color: whitesmoke;
+}
+
+.search {
+  margin-bottom: 10px;
+}
+
+.new-btn {
+  color: #fff;
+}
+
+footer {
+  margin-top: 10px;
+}
+.card {
+  padding: 20px;
+  color: black;
+  margin-bottom: 20px;
+}

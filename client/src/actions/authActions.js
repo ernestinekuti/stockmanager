@@ -59,7 +59,7 @@ export const setCurrentUser = (decoded) => {
         payload: decoded
     };
 };
-/*
+
 // Log out user
 
 export const logoutUser = () => dispatch => {
@@ -69,4 +69,5 @@ export const logoutUser = () => dispatch => {
     setAuthToken(false);
     // set current user to {} which will set isAuthenticated to false
     dispatch(setCurrentUser({}));
-}; */
+    
+}; 

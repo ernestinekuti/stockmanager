@@ -1,9 +1,9 @@
-import { PRODUCT_LOADING, GET_PRODUCT, CLEAR_CURRENT_PRODUCT } from '../actions/types';
+import { PRODUCT_LOADING, GET_PRODUCT, GET_PRODUCTS, CLEAR_PRODUCTS, PRODUCT_NOT_FOUND } from '../actions/types';
 
 
 const initialState = {
+    product: null,
     products: null,
-    productss: null,
     loading: false
 
 };
@@ -14,6 +14,12 @@ export default function (state = initialState, action) {
             return {
                 ...state,
                 loading: true
+            }   
+             case GET_PRODUCTS:
+            return {
+                ...state,
+                products: action.payload,
+                loading: false
             }
         case GET_PRODUCT:
             return {
@@ -21,10 +27,12 @@ export default function (state = initialState, action) {
                 product: action.payload,
                 loading: false
             }
-        case CLEAR_CURRENT_PRODUCT:
+
+        
+        case CLEAR_PRODUCTS:
             return {
                 ...state,
-                product: null
+                products: null
             }
 
         default:
